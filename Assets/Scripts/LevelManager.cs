@@ -22,6 +22,7 @@ namespace DefaultNamespace
 
         public void Quit()
         {
+            GameManager.Instance.SaveData();
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.ExitPlaymode();
 #else   
